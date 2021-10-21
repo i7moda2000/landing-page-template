@@ -40,11 +40,14 @@ body {
 }
 
 .btn-link {
-  border: 1px solid var(--btn-color);
   border-radius: 20px;
   background-color: var(--btn-color);
   padding: 8px;
   color: var(--font-color-dark);
+}
+.btn-transform:hover {
+  transition: 0.6s !important;
+  transform: scale(0.8);
 }
 
 /* ************************* */
