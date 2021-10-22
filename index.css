@@ -118,6 +118,21 @@ section h2 {
 }
 
 /* ************************* */
+/* Price card  */
+/* ************************* */
+.price-wrap {
+  display: flex;
+}
+.price-card {
+  border: 1px solid var(--divider-color);
+  padding: 1em;
+  flex-basis: 30em;
+}
+.price-card :first-child {
+  text-align: center;
+  margin: 1em 0;
+}
+/* ************************* */
 /* Footer  */
 /* ************************* */
 footer {
@@ -201,4 +216,17 @@ button {
 .light-theme {
   background-color: var(--background-color-light) !important;
   color: var(--font-color-light) !important;
+}
+
+/* ************** */
+/* Phone */
+/* ************** */
+
+@media (min-width: 100px) and (max-width: 414px) {
+  .price-wrap {
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: 420px) and (max-width: 961px) {
 }
