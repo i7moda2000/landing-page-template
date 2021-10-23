@@ -30,6 +30,9 @@ a {
   text-decoration: none;
   color: var(--font-color-darkr);
 }
+img {
+  width: 100%;
+}
 body {
   background-color: var(--background-color-dark);
   overflow-x: hidden;
@@ -84,24 +87,28 @@ nav {
 /* ************************* */
 
 .main-text {
-  /* background-image: var(--backgroound-img); */
+  /* background-image: var(--backgroound-img);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center; */
   text-align: center;
-  margin: 0;
   height: 200px;
   max-width: 100%;
   padding: 50px;
+  margin-bottom: 40em;
 }
 
-.main-text h1 {
+.main-text :first-child {
   margin-bottom: 20px;
 }
 .main-text p {
   margin-bottom: 50px;
 }
 
+.main-img {
+  display: inline-block;
+  padding: 3em 0;
+}
 /* ************************* */
 /* sections  */
 /* ************************* */
@@ -111,27 +118,47 @@ section {
   margin-bottom: 0;
   padding: 20px;
 }
-section h2 {
+.section-header {
   text-align: center;
   padding-top: 20px;
   padding-bottom: 20px;
 }
-
-/* ************************* */
-/* Price card  */
-/* ************************* */
-.price-wrap {
-  display: flex;
-}
-.price-card {
-  border: 1px solid var(--divider-color);
-  padding: 1em;
-  flex-basis: 30em;
-}
-.price-card :first-child {
-  text-align: center;
+.section-header :first-child {
   margin: 1em 0;
 }
+
+/* ************************* */
+/* wrapper  */
+/* ************************* */
+
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.price-card {
+  border: 1px solid var(--divider-color);
+}
+
+.price-card ul {
+  margin: 1em auto;
+}
+
+.price-card ul :first-child {
+  text-align: left;
+}
+
+.wrapper-item :first-child {
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+.wrapper-item {
+  flex-basis: 15em;
+  padding: 2em;
+}
+
 /* ************************* */
 /* Footer  */
 /* ************************* */
@@ -223,8 +250,8 @@ button {
 /* ************** */
 
 @media (min-width: 100px) and (max-width: 414px) {
-  .price-wrap {
-    flex-wrap: wrap;
+  body {
+    font-size: var(--font-size-small);
   }
 }
 
