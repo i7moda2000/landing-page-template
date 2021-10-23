@@ -143,7 +143,7 @@ section {
 .price-card {
   border: 1px solid var(--divider-color);
 }
-/* 
+/*
 .price-card ul {
   margin: 1em auto;
 }
@@ -251,7 +251,7 @@ button {
 /* ************** */
 /* Phone */
 /* ************** */
-
+/* 
 @media (min-width: 100px) and (max-width: 414px) {
   body {
     font-size: var(--font-size-small);
@@ -262,4 +262,4 @@ button {
   body {
     font-size: var(--font-size-small);
   }
-}
+} */
