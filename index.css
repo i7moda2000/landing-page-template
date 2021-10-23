@@ -31,7 +31,7 @@ a {
   color: var(--font-color-darkr);
 }
 img {
-  width: 100%;
+  max-width: 100%;
 }
 body {
   background-color: var(--background-color-dark);
@@ -95,6 +95,8 @@ nav {
   height: 200px;
   max-width: 100%;
   padding: 50px;
+}
+.main {
   margin-bottom: 40em;
 }
 
@@ -109,6 +111,7 @@ nav {
   display: inline-block;
   padding: 3em 0;
 }
+
 /* ************************* */
 /* sections  */
 /* ************************* */
@@ -140,14 +143,14 @@ section {
 .price-card {
   border: 1px solid var(--divider-color);
 }
-
+/* 
 .price-card ul {
   margin: 1em auto;
 }
 
 .price-card ul :first-child {
   text-align: left;
-}
+} */
 
 .wrapper-item :first-child {
   text-align: center;
@@ -256,4 +259,7 @@ button {
 }
 
 @media (min-width: 420px) and (max-width: 961px) {
+  body {
+    font-size: var(--font-size-small);
+  }
 }
