@@ -182,8 +182,8 @@ footer {
 .form-frame {
   background-color: var(--background-color-light);
   border: 1px solid #c5cccb;
-  max-width: 400px;
-  height: 400px;
+  max-width: 100%;
+  width: 350px;
   margin: 5em auto;
 }
 
@@ -256,10 +256,16 @@ button {
   .main {
     margin-bottom: 20em;
   }
+  .form-frame {
+    margin: 9em auto;
+  }
 }
 
 @media (min-width: 420px) and (max-width: 961px) {
   .main {
     margin-bottom: 30em;
+  }
+  .form-frame {
+    margin: 9em auto;
   }
 }
