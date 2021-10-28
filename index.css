@@ -108,7 +108,8 @@ nav {
 }
 
 .main-img {
-  display: inline-block;
+  display: block;
+  margin: auto;
   padding: 3em 0;
 }
 
@@ -251,15 +252,15 @@ button {
 /* ************** */
 /* Phone */
 /* ************** */
-/* 
+
 @media (min-width: 100px) and (max-width: 414px) {
-  body {
-    font-size: var(--font-size-small);
+  .main {
+    margin-bottom: 20em;
   }
 }
 
 @media (min-width: 420px) and (max-width: 961px) {
-  body {
-    font-size: var(--font-size-small);
+  .main {
+    margin-bottom: 30em;
   }
-} */
+}
