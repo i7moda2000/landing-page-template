@@ -170,10 +170,9 @@ footer {
   border-top: 1px solid var(--divider-color);
   padding: 20px;
   /* height: 30vh; */
-  width: 100%;
+  max-width: 100%;
   display: flex;
   justify-content: center;
-  align-items: flex-end;
 }
 
 /* *********************** */
